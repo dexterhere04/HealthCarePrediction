@@ -39,25 +39,22 @@ SMOTE (Synthetic Minority Oversampling Technique) is used to generate synthetic 
 
 The balanced dataset is split into training (80%) and testing (20%) sets, stratifying by the target label to maintain class proportions.
 
-### 5) Model Architecture
-
-The predictive model is a stacked ensemble combining three strong classifiers:
-
-Random Forest (RF)
-
-400 trees, balanced class weights
-
-XGBoost (XGB)
-
-400 estimators, learning rate 0.05, depth 6, subsample 0.8
-
-LightGBM (LGBM)
-
-400 estimators, learning rate 0.05, subsample 0.8
-
 The predictions from these base models are fed into a final Random Forest estimator in the stacking ensemble, allowing the model to learn from the strengths of each base learner.
 
 passthrough=True ensures the original features are also available to the final estimator for improved prediction.
+
+## 🧠 Model Details
+
+- **Input:** Patient health time-series data
+- **Output:** Heart failure risk prediction
+- **Tech Stack:** Python, Pandas, Scikit-learn, XGBoost, Streamlit
+- **Models Used:**
+  - Random Forest
+  - XGBoost
+  - LightGBM (LGBM)
+  - Stacking Classifier (Final Model)
+
+---
 
 #### Model Evaluation
 
@@ -119,19 +116,6 @@ streamlit run dashboard.py
 
 The app will be available at:
 **http://localhost:8501**
-
----
-
-## 🧠 Model Details
-
-- **Input:** Patient health time-series data
-- **Output:** Heart failure risk prediction
-- **Tech Stack:** Python, Pandas, Scikit-learn, XGBoost, Streamlit
-- **Models Used:**
-  - Random Forest
-  - XGBoost
-  - LightGBM (LGBM)
-  - Stacking Classifier (Final Model)
 
 ---
 
