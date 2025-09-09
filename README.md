@@ -130,6 +130,7 @@ The app will be available at:
 - **Models Used:**
   - Random Forest
   - XGBoost
+  - LightGBM (LGBM)
   - Stacking Classifier (Final Model)
 
 ---
