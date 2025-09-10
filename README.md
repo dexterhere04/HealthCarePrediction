@@ -96,7 +96,7 @@ HealthCarePrediction/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/dexterhere04/HealthCarePrediction
+git clone https://github.com/dexterhere04/HealthCarePrediction.git
 cd HealthCarePrediction
 ```
 
@@ -116,6 +116,8 @@ streamlit run dashboard.py
 
 The app will be available at:
 **http://localhost:8501**
+
+Drag and Drop the heart_failure_timeseries1.csv for predictions
 
 ---
 
