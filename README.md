@@ -86,7 +86,7 @@ HealthCarePrediction/
 ├── heart_failure_timeseries1.csv  # Dataset
 ├── scaler.pkl                  # StandardScaler for preprocessing
 ├── stacking_model.pkl          # Trained ensemble model
-└── image.png                   # Project image/logo
+└── image.png                   
 ```
 
 ---
